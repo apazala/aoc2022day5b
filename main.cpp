@@ -63,6 +63,7 @@ int main()
 
         vector<char> *stackOrig = &cratesStacks[colOrig-1];
         vector<char> *stackDest = &cratesStacks[colDest-1];
+        //Faster alternative-> linked lists using nodes!
         stackDest->insert(stackDest->end(), stackOrig->end()- ncrates, stackOrig->end());
         stackOrig->erase(stackOrig->end()- ncrates, stackOrig->end());
         
